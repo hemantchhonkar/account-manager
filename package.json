@@ -1,0 +1,35 @@
+{
+  "name": "account-manager",
+  "version": "1.0.0",
+  "description": "Keep a track of all your credits and debits with interest rate calculations",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "npm test ",
+    "lint": "eslint ."
+  },
+  "author": "Hemant Chhonkar",
+  "license": "ISC",
+  "dependencies": {
+    "expres": "0.0.5",
+    "express": "^4.17.0",
+    "mongodb": "^3.2.6",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": 2500,
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
